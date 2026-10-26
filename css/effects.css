@@ -108,3 +108,10 @@
 @keyframes sheen { to { transform: translateX(100%); } }
 @media (hover: hover) { .stats li:hover { transform: translateY(-2px); box-shadow: var(--shadow); } }
 @media (prefers-reduced-motion: reduce) { .stats li::after { display: none; } .stats li:hover { transform: none; } }
+
+/* Compact entries stay flat: no lift/glow, smaller timeline dots */
+.entry.entry-compact:hover, .entry.entry-compact:focus-within { transform: none; box-shadow: none; border-color: transparent; }
+.entry.entry-compact + .entry.entry-compact:hover { border-top-color: var(--line); }
+.timeline .earlier .entry::before { left: -20px; top: 14px; width: 10px; height: 10px; border-width: 2px; box-shadow: none; }
+.timeline .earlier .entry + .entry::before { top: 18px; }
+.timeline .earlier .subhead { margin-top: 26px; }

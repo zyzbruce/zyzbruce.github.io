@@ -37,3 +37,40 @@ h2 { break-after: avoid; page-break-after: avoid; }
 .stats li + li::before { content: "  ·  "; color: var(--muted); }
 .stats strong { font-size: 9.5pt; color: var(--accent); }
 .stats span { font-size: 9pt; color: var(--muted); margin-left: 3pt; }
+.subhead { font-size: 9pt; margin: 6pt 0 2pt; }
+.entry.entry-compact + .entry.entry-compact { border-top: 0; padding-top: 0; margin-top: 4pt; }
+.entry-compact .entry-title { font-size: 10pt; }
+.entry-compact .bullets li, .compact-list li { font-size: 9pt; margin: 0; }
+.compact-list { padding-left: 1.2em; margin: 0; }
+.award, .courses-label { font-size: 9pt; margin-top: 2pt; display: inline; }
+.award::after { content: "  ·  "; }
+.courses-label::after { content: "："; }
+.tags-quiet { display: inline; color: var(--text); }
+.tags-quiet li { color: var(--text); }
+#education .entry.entry-compact { margin-top: 5pt; }
+html[lang="en"] .courses-label::after { content: ": "; }
+
+/* Tighter density so the fuller resume stays at 2 pages */
+@page { size: A4; margin: 12mm 13mm; }
+body { font-size: 9.5pt; line-height: 1.32; }
+section { padding: 5pt 0; }
+.hero h1 { font-size: 18pt; }
+.tagline { font-size: 10pt; }
+.hero-tags { display: none; }
+.summary, .bullets li { font-size: 9pt; }
+.bullets li { margin: 0; }
+.entry + .entry { margin-top: 5pt; }
+.entry-compact .bullets li, .compact-list li, .skill h3, .skill p { font-size: 8.5pt; }
+.stats { margin-top: 1pt; }
+.timeline { padding-left: 0; }
+/* Print-only trim to stay at 2 pages: course projects are web-only */
+.course-projects { display: none !important; }
+body { line-height: 1.27; }
+#about p { font-size: 9pt; }
+.skills { gap: 1pt 12pt; }
+.entry-meta, .entry-date, .tags, .tags li { font-size: 8.5pt; }
+h2 { margin-bottom: 2pt; }
+/* Let long project cards split across pages instead of leaving a gap */
+#projects .entry { break-inside: auto; page-break-inside: auto; }
+#projects .entry-title, #projects .entry-meta, #projects .tags, #projects .stats { break-after: avoid; page-break-after: avoid; }
+.bullets li { break-inside: avoid; }

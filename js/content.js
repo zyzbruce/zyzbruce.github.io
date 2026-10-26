@@ -41,8 +41,8 @@ window.RESUME_CONTENT = {
 
   about_title: { zh: "简介", en: "About" },
   about_body: {
-    zh: "毕业于威尔弗里德·劳雷尔大学（Wilfrid Laurier University）计算机科学专业。现为安大略省伯灵顿 Alei Kitchen 的合伙人兼经理，从零开店，负责团队、供应链与财务流程，并把 AI 工具和自动化引入日常运营。业余独立开发软件项目，包括双目相机树木胸径测量（留出树 MAE 0.99 cm）、已投入日常使用的收租小程序，以及 AI 视频生产流水线。",
-    en: "Computer science graduate of Wilfrid Laurier University. Partner & Manager at Alei Kitchen in Burlington, Ontario — opened the restaurant from scratch, runs the team, supply chain and finance workflows, and brings AI tools and automation into day-to-day operations. Independently builds software projects, including stereo-camera tree DBH measurement (0.99 cm MAE on held-out trees), a rent-collection mini program in daily use, and an AI video production pipeline."
+    zh: "毕业于威尔弗里德·劳雷尔大学（Wilfrid Laurier University）计算机科学专业。现为安大略省伯灵顿 Alei Kitchen 的合伙人兼经理，从零开店，负责团队、供应链与财务流程，并把 AI 工具和自动化引入日常运营。此前曾创办茶叶品牌、联合创办留学咨询机构。业余独立开发软件项目，包括双目相机树木胸径测量（留出树 MAE 0.99 cm）、已投入日常使用的收租小程序，以及 AI 视频生产流水线。",
+    en: "Computer science graduate of Wilfrid Laurier University. Partner & Manager at Alei Kitchen in Burlington, Ontario — opened the restaurant from scratch, runs the team, supply chain and finance workflows, and brings AI tools and automation into day-to-day operations. Previously founded a tea brand and co-founded an overseas-education consulting agency. Independently builds software projects, including stereo-camera tree DBH measurement (0.99 cm MAE on held-out trees), a rent-collection mini program in daily use, and an AI video production pipeline."
   },
 
   exp_title: { zh: "工作经历", en: "Experience" },
@@ -66,6 +66,57 @@ window.RESUME_CONTENT = {
       "Manages suppliers, purchasing and inventory.",
       "Designed the cooking and dish-output programs for the kitchen’s automatic stir-fry machine.",
       "Uses AI for sales dashboards, hours / payroll / tips calculation, monthly finance, inventory and cost sheets, and business analysis."
+    ]
+  },
+
+  /* Earlier experience (compact) */
+  exp_earlier_title: { zh: "早期经历", en: "Earlier experience" },
+  exp2_role: { zh: "品牌运营主管兼人力资源主管", en: "Brand Operations Supervisor & HR Supervisor" },
+  exp2_org: { zh: "Développement OKI S.A.", en: "Développement OKI S.A." },
+  exp2_loc: { zh: "加拿大蒙特利尔与多伦多", en: "Montréal & Toronto, Canada" },
+  exp2_date: { zh: "2023.04 – 2023.08", en: "Apr 2023 – Aug 2023" },
+  exp2_list: {
+    zh: [
+      "负责初创公司品牌部门的日常运营；协调市场团队制定并执行营销策略，产出宣传物料、社交媒体帖子和博客文章。",
+      "跟踪品牌认知与营销效果相关 KPI，为后续营销活动和公司决策提供数据依据。",
+      "主管招聘流程与绩效管理，持续跟踪员工表现并给出改进反馈。"
+    ],
+    en: [
+      "Supervised day-to-day brand operations at a startup; coordinated the marketing team to develop and execute strategies, producing promotional material, social media posts and blog articles.",
+      "Monitored brand-awareness and marketing KPIs to inform future campaigns and organizational decisions.",
+      "Oversaw recruitment and performance management, tracking employee performance and giving feedback for improvement."
+    ]
+  },
+  exp3_role: { zh: "茶叶品牌创始人", en: "Founder" },
+  exp3_org: { zh: "Zhangzhou Tea Craftsman Tea Co., Ltd.", en: "Zhangzhou Tea Craftsman Tea Co., Ltd." },
+  exp3_loc: { zh: "中国漳州", en: "Zhangzhou, China" },
+  exp3_date: { zh: "2020.09 – 2021.09", en: "Sep 2020 – Sep 2021" },
+  exp3_list: {
+    zh: [
+      "创立面向中国年轻一代的茶叶品牌，推广传统茶文化与泡茶、品茶方式。",
+      "按目标市场需求开发新茶品并参与包装内容设计；开展市场调研，为产品开发和营销策略提供依据。",
+      "建立并维护供应商与合作伙伴关系、管理供应链；负责团队招聘、培训与绩效管理。"
+    ],
+    en: [
+      "Founded a tea brand for China’s younger generation, promoting traditional tea culture and tea brewing.",
+      "Developed new tea products for the target market and took part in packaging design; led market research to inform product development and marketing strategy.",
+      "Built and maintained supplier and partner relationships and managed the supply chain; handled recruitment, training and performance management."
+    ]
+  },
+  exp4_role: { zh: "留学咨询机构联合创始人 · 学生服务顾问兼市场专员", en: "Co-Founder, Student Services Consultant & Marketing Specialist" },
+  exp4_org: { zh: "HangFeng Overseas Education Agency", en: "HangFeng Overseas Education Agency" },
+  exp4_loc: { zh: "中国武汉", en: "Wuhan, China" },
+  exp4_date: { zh: "2019.01 – 2020.01", en: "Jan 2019 – Jan 2020" },
+  exp4_list: {
+    zh: [
+      "联合创办协助中国学生出国留学的咨询机构，设计选校申请、签证支持与学业规划服务。",
+      "负责市场推广：制定并执行内容计划，在微信等社交平台发布内容以吸引潜在客户。",
+      "为学生提供学业与职业规划、申请流程及海外生活咨询，并根据客户反馈和市场趋势改进服务。"
+    ],
+    en: [
+      "Co-founded an agency helping Chinese students study abroad; designed consulting services for school applications, visa support and academic planning.",
+      "Led marketing: planned and executed content and published on social platforms including WeChat to attract prospective clients.",
+      "Advised students on academic and career planning, applications and living abroad; refined services based on client feedback and market trends."
     ]
   },
 
@@ -148,10 +199,48 @@ window.RESUME_CONTENT = {
     ]
   },
 
+  /* Course projects (compact list) */
+  course_title: { zh: "课程项目", en: "Course projects" },
+  course_list: {
+    zh: [
+      "心血管疾病预测：用 scikit-learn、Pandas、NumPy、Matplotlib 建模，采用 SVM 与随机森林，准确率 87.5%。",
+      "Apriori 交叉销售推荐：对电商平台用户浏览会话做商品关联挖掘，构建交叉销售推荐。",
+      "Linux 下 C 语言文件与目录管理系统：基于原生系统调用实现文件 / 目录的创建、移动、删除与读写，含错误处理与删除确认，并用 strace 分析系统调用。"
+    ],
+    en: [
+      "Cardiovascular disease prediction: models built with scikit-learn, Pandas, NumPy and Matplotlib using SVM and Random Forest; 87.5% accuracy.",
+      "Apriori cross-selling recommendation: data mining of item associations in e-commerce browsing sessions to drive cross-selling recommendations.",
+      "C file & directory management system on Linux: create, move, delete and I/O via native system calls, with error handling, deletion confirmations and strace analysis of system calls."
+    ]
+  },
+
   edu_title: { zh: "教育背景", en: "Education" },
   edu1_school: { zh: "威尔弗里德·劳雷尔大学（Wilfrid Laurier University）", en: "Wilfrid Laurier University" },
   edu1_degree: { zh: "计算机科学荣誉理学学士", en: "Honours Bachelor of Science in Computer Science" },
 
+  edu1_award: { zh: "入学奖学金（2019）", en: "Entrance Scholarship (2019)" },
+  edu1_courses_label: { zh: "相关课程", en: "Relevant courses" },
+  edu1_courses: {
+    zh: "软件开发 · 面向对象编程 · 数字电子 · 数据结构 I & II · 人工智能 · 机器学习",
+    en: "Software Development · Object-Oriented Programming · Digital Electronics · Data Structures I & II · Artificial Intelligence · Machine Learning"
+  },
+  edu2_name: { zh: "约克大学 × IBM 工作实习教育项目（Work Placement Education Program）", en: "York University & IBM — Work Placement Education Program" },
+  edu2_date: { zh: "2023", en: "2023" },
+  edu2_list: {
+    zh: [
+      "评估一家美国连锁养老护理机构的现有做法，识别数字化转型与运营改进方向。",
+      "主导接入 IBM 数据库管理服务，为其建立患者数据库。"
+    ],
+    en: [
+      "Assessed a US-based nursing-home chain’s existing practices to identify areas for digital transformation and operational improvement.",
+      "Led the integration of IBM database management services to establish a patient database."
+    ]
+  },
+  cert_title: { zh: "证书", en: "Certifications" },
+  cert_list: {
+    zh: ["iOS Machine Learning with Core ML 2 & Swift 5 — Udemy", "Mastering ARKit for iOS — Udemy"],
+    en: ["iOS Machine Learning with Core ML 2 & Swift 5 — Udemy", "Mastering ARKit for iOS — Udemy"]
+  },
   skills_title: { zh: "技能", en: "Skills" },
   skill1_name: { zh: "运营与 SOP", en: "Operations & SOPs" },
   skill1_desc: { zh: "开店筹备、标准作业程序、招聘培训与排班", en: "Restaurant launch, standard operating procedures, hiring, training and scheduling" },
@@ -163,9 +252,12 @@ window.RESUME_CONTENT = {
   skill4_desc: { zh: "OpenCV · YOLO26-seg · SAM3 · 双目立体视觉 · 实例分割 · 野外数据采集", en: "OpenCV · YOLO26-seg · SAM3 · stereo vision · instance segmentation · field data collection" },
 
   skill5_name: { zh: "软件开发", en: "Software Development" },
-  skill5_desc: { zh: "Node.js · Python · 微信小程序 / CloudBase", en: "Node.js · Python · WeChat Mini Program / CloudBase" },
+  skill5_desc: { zh: "Python · Java · SQL · C++ · Node.js · scikit-learn · Pandas · 微信小程序 / CloudBase", en: "Python · Java · SQL · C++ · Node.js · scikit-learn · Pandas · WeChat Mini Program / CloudBase" },
   skill6_name: { zh: "媒体与测试", en: "Media & Testing" },
   skill6_desc: { zh: "three.js · ffmpeg · 自动化测试（pytest、node:test）", en: "three.js · ffmpeg · automated testing (pytest, node:test)" },
+
+  skill7_name: { zh: "语言", en: "Languages" },
+  skill7_desc: { zh: "中文、英语", en: "Chinese, English" },
 
   contact_title: { zh: "联系方式", en: "Contact" },
   contact_email_label: { zh: "邮箱", en: "Email" },
