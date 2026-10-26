@@ -1,0 +1,39 @@
+/* Print: tidy 1–2 page resume */
+:root { --bg: #fff; --surface: #fff; --text: #000; --muted: #333; --line: #ccc; --accent: #0f5c63; }
+.topbar, .btn, .skip-link, .footer, .noscript { display: none !important; }
+body { font-size: 10pt; line-height: 1.4; background: #fff; }
+.page { max-width: none; padding: 0; }
+section { padding: 8pt 0; border-bottom: 0; }
+.hero { padding: 0 0 6pt; border-bottom: 1.5pt solid var(--accent); }
+.hero h1 { font-size: 20pt; }
+.name-alt { display: inline; font-size: 12pt; margin-left: 6pt; }
+.tagline { font-size: 10.5pt; margin-top: 4pt; }
+h2 { font-size: 9pt; margin-bottom: 4pt; }
+.entry { border: 0; padding: 0; border-radius: 0; break-inside: avoid; page-break-inside: avoid; }
+.entry + .entry { margin-top: 7pt; }
+.entry-title { font-size: 11pt; }
+.entry-meta, .entry-date { font-size: 9pt; }
+.tags { display: block; margin: 1pt 0 0; padding: 0; list-style: none; font-size: 9pt; color: var(--accent); }
+.tags li { display: inline; background: none; border: 0; padding: 0; font-size: 9pt; }
+.tags li + li::before { content: " · "; }
+.progress, .hero-bg { display: none !important; }
+.timeline { padding: 0; }
+.summary { font-size: 9.5pt; margin-top: 2pt; }
+.bullets { margin-top: 2pt; }
+.bullets li { font-size: 9.5pt; margin: 1pt 0; }
+.skills { grid-template-columns: 1fr 1fr; gap: 3pt 14pt; }
+.skill { border: 0; padding: 0; }
+.skill h3 { font-size: 9.5pt; display: inline; }
+.skill h3::after { content: ": "; }
+.skill p { display: inline; font-size: 9.5pt; }
+#contact { display: none; }
+.print-only { display: inline; }
+.hero-facts { font-size: 9.5pt; margin-top: 2pt; color: var(--text); }
+.skills > .skill:last-child:nth-child(odd) { grid-column: 1 / -1; }
+a { color: inherit; text-decoration: none; }
+h2 { break-after: avoid; page-break-after: avoid; }
+.stats { display: block; margin: 2pt 0 0; padding: 0; list-style: none; font-size: 9pt; }
+.stats li { display: inline; background: none; border: 0; padding: 0; }
+.stats li + li::before { content: "  ·  "; color: var(--muted); }
+.stats strong { font-size: 9.5pt; color: var(--accent); }
+.stats span { font-size: 9pt; color: var(--muted); margin-left: 3pt; }

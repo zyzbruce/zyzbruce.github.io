@@ -1,0 +1,6 @@
+/* Loaded only when the OS prefers a dark colour scheme */
+:root {
+  --bg: #121417; --surface: #1a1d21; --text: #e7e9ec; --muted: #a3aab3;
+  --line: #2b3036; --accent: #5fb8bf; --accent-soft: #1d3436;
+}
+.lang-toggle button[aria-pressed="true"] { color: #0b1214; }
