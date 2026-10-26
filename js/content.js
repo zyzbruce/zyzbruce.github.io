@@ -261,7 +261,7 @@ window.RESUME_CONTENT = {
 
   contact_title: { zh: "联系方式", en: "Contact" },
   contact_email_label: { zh: "邮箱", en: "Email" },
-  contact_email: { zh: "byzshuai@gmail.com", en: "byzshuai@gmail.com" },
+  contact_email: { zh: "zyzbruce123321@gmail.com", en: "zyzbruce123321@gmail.com" },
   work_auth: { zh: "可在加拿大工作", en: "Authorized to work in Canada" },
 
   footer: { zh: "© 张严之 Bruce Zhang", en: "© Yanzhi (Bruce) Zhang" }
