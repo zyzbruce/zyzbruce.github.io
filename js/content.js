@@ -16,8 +16,8 @@ window.RESUME_CONTENT = {
     en: "Yanzhi (Bruce) Zhang · Resume"
   },
   meta_description: {
-    zh: "张严之（Bruce Zhang）：计算机科学荣誉理学学士，餐厅合伙人兼经理，用 AI 与自动化管理运营。",
-    en: "Yanzhi (Bruce) Zhang: Honours BSc in Computer Science and restaurant partner & manager who uses AI and automation to run operations."
+    zh: "张严之（Bruce Zhang）：把 AI 落到真实场景，餐厅运营自动化、AI 内容流水线、林业视觉测量。",
+    en: "Yanzhi (Bruce) Zhang: putting AI to work in real settings — restaurant operations automation, an AI content pipeline, and forestry computer vision."
   },
   skip_link: { zh: "跳到主要内容", en: "Skip to main content" },
   nav_about: { zh: "简介", en: "About" },
@@ -31,8 +31,12 @@ window.RESUME_CONTENT = {
   name_primary: { zh: "张严之", en: "Yanzhi (Bruce) Zhang" },
   name_secondary: { zh: "Yanzhi (Bruce) Zhang", en: "张严之" },
   tagline: {
-    zh: "计算机科学毕业生 · 餐厅运营者，用 AI 与自动化管理日常运营。",
-    en: "Computer science graduate and restaurant operator who uses AI and automation to run operations."
+    zh: "把 AI 落到真实场景：餐厅运营自动化、AI 内容流水线、林业视觉测量。",
+    en: "Putting AI to work in real settings: restaurant operations automation, an AI content pipeline, and forestry computer vision."
+  },
+  hero_stack: {
+    zh: "AI 工作流 · 计算机视觉 · 运营自动化",
+    en: "AI workflows · Computer vision · Operations automation"
   },
 
   about_title: { zh: "简介", en: "About" },
