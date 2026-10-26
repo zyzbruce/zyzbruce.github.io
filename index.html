@@ -64,7 +64,7 @@
           <span class="entry-date" data-i18n="exp1_date">2025.01 – 至今</span>
         </div>
         <p class="entry-meta" data-i18n="exp1_loc">安大略省伯灵顿</p>
-        <ul class="bullets" data-i18n-list="exp1_list"><li>从零开始筹备并开设餐厅。</li><li>编写标准作业程序（SOP）。</li><li>负责员工招聘、培训与排班。</li><li>管理供应商、采购与库存。</li><li>厨房采用自动炒菜机，为其设计烹饪与出菜程序。</li><li>使用 AI 搭建销售看板，计算工时、工资与小费，处理月度财务、库存与成本表，并进行经营分析。</li></ul>
+        <ul class="bullets" data-i18n-list="exp1_list"><li>从零开始筹备并开设餐厅。</li><li>编写标准作业程序（SOP）。</li><li>负责员工招聘、培训与排班。</li><li>管理供应商、采购与库存。</li><li>厨房采用自动炒菜机，负责设备系统程序的设置。</li><li>使用 AI 搭建销售看板，计算工时、工资与小费，处理月度财务、库存与成本表，并进行经营分析。</li></ul>
       </article>
       <div class="earlier">
         <h3 class="subhead" data-i18n="exp_earlier_title">早期经历</h3>
@@ -103,7 +103,7 @@
         <p class="entry-meta" data-i18n="proj1_meta">独立开发 · 2026.08 – 至今</p>
         <ul class="stack tags" data-i18n-tags="proj1_stack"><li>Python</li><li>OpenCV</li><li>YOLO26-seg（Ultralytics）</li><li>SAM3</li><li>NumPy</li><li>pytest</li></ul>
         <ul class="stats" data-i18n-stats="proj1_stats"><li><strong>0.99 cm</strong><span>留出树 MAE（原 1.32 cm）</span></li><li><strong>92%</strong><span>误差 ≤2 cm 占比（原 78%）</span></li><li><strong>约 270 株</strong><span>围尺实测真值</span></li></ul>
-        <p class="summary" data-i18n="proj1_summary">家里在福建武平有林场，林木调查要逐株用围尺量胸径（离地 1.3 m 处的树干直径），费人工也慢。目标：用双目相机对着树拍一下就自动算出胸径，用于径阶统计和蓄积估算。</p>
+        <p class="summary" data-i18n="proj1_summary">林木调查要逐株用围尺量胸径（离地 1.3 m 处的树干直径），费人工也慢。目标：用双目相机对着树拍一下就自动算出胸径，用于径阶统计和蓄积估算。</p>
         <ul class="bullets" data-i18n-list="proj1_list"><li>误差分析：留出树 MAE 从 1.32 cm 降至 0.99 cm，误差 ≤2 cm 的比例从 78% 提升至 92%。逐项拆解误差，定位瓶颈不在分割（人工轮廓误差同样有 1.3 cm），而在每次外业的双目视差漂移（胸径整体偏小 5–10%）；为此加入标定体检与开工前棋盘尺度校正，用训练集树木拟合视差偏移后应用到留出树。</li><li>数据：实地拍摄 10 余段双目视频，围尺实测约 270 株树胸径作为真值；自写标注与质检工具，整理出 380 多张合格树干轮廓标注；按树分组切分 train/val/test，同一棵树不会同时出现在训练集和测试集。</li><li>模型：用 YOLO26-seg 训练树干实例分割模型，在密林、杂草多、光线暗的野外画面中分出完整树干；加入 SAM3 点选辅助预标注，提高标注效率。</li><li>测量算法：OpenCV 双目标定、立体校正与 SGBM 视差；树干轮廓结合深度，按圆柱切线几何算出胸径；加入深度质量门控、0.8–1.5 m 测距门控与多帧中位数融合，多棵树同框时自动选出目标树。</li><li>工程化：实时 GUI 支持同一棵树多角度测量融合；ArUco 标记确认 1.3 m 胸高位置，无损录像与离线回放评测，200 多个测试用例。另设计了自制全局快门双目相机方案（树莓派 5 + 硬件同步触发），用于解决卷帘快门和野外暗光问题。</li></ul>
       </article>
       <article class="entry card-focus" tabindex="0" aria-labelledby="proj2-h">

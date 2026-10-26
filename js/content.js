@@ -56,7 +56,7 @@ window.RESUME_CONTENT = {
       "编写标准作业程序（SOP）。",
       "负责员工招聘、培训与排班。",
       "管理供应商、采购与库存。",
-      "厨房采用自动炒菜机，为其设计烹饪与出菜程序。",
+      "厨房采用自动炒菜机，负责设备系统程序的设置。",
       "使用 AI 搭建销售看板，计算工时、工资与小费，处理月度财务、库存与成本表，并进行经营分析。"
     ],
     en: [
@@ -64,7 +64,7 @@ window.RESUME_CONTENT = {
       "Wrote standard operating procedures (SOPs).",
       "Recruits, trains and schedules staff.",
       "Manages suppliers, purchasing and inventory.",
-      "Designed the cooking and dish-output programs for the kitchen’s automatic stir-fry machine.",
+      "Set up the system program for the kitchen’s automatic stir-fry machine.",
       "Uses AI for sales dashboards, hours / payroll / tips calculation, monthly finance, inventory and cost sheets, and business analysis."
     ]
   },
@@ -133,8 +133,8 @@ window.RESUME_CONTENT = {
     en: ["0.99 cm|MAE on held-out trees (from 1.32 cm)", "92%|within ≤2 cm (from 78%)", "~270|trees tape-measured as ground truth"]
   },
   proj1_summary: {
-    zh: "家里在福建武平有林场，林木调查要逐株用围尺量胸径（离地 1.3 m 处的树干直径），费人工也慢。目标：用双目相机对着树拍一下就自动算出胸径，用于径阶统计和蓄积估算。",
-    en: "My family has a forest in Wuping, Fujian, where forest inventory means tape-measuring each tree’s DBH (trunk diameter 1.3 m above ground) by hand — slow and labour-intensive. Goal: point a stereo camera at a tree and get its DBH automatically, for diameter-class statistics and volume estimation."
+    zh: "林木调查要逐株用围尺量胸径（离地 1.3 m 处的树干直径），费人工也慢。目标：用双目相机对着树拍一下就自动算出胸径，用于径阶统计和蓄积估算。",
+    en: "Forest inventory means tape-measuring each tree’s DBH (trunk diameter 1.3 m above ground) by hand — slow and labour-intensive. Goal: point a stereo camera at a tree and get its DBH automatically, for diameter-class statistics and volume estimation."
   },
   proj1_list: {
     zh: [
@@ -146,7 +146,7 @@ window.RESUME_CONTENT = {
     ],
     en: [
       "Error analysis: cut MAE on held-out trees from 1.32 cm to 0.99 cm and raised the share within ≤2 cm from 78% to 92%. Broke the error down source by source: the bottleneck was not segmentation (manual contours also err by 1.3 cm) but per-session stereo disparity drift that biased DBH 5–10% low. Fixed with a calibration health check and pre-session checkerboard scale correction, fitting the disparity offset on training trees and applying it to held-out trees.",
-      "Data: shot 10+ stereo videos in the family forest and tape-measured ~270 trees as ground truth; wrote my own annotation and QC tool and curated 380+ trunk-contour masks; split train/val/test by tree so no tree appears in both training and test sets.",
+      "Data: shot 10+ stereo videos in a Fujian forest and tape-measured ~270 trees as ground truth; wrote my own annotation and QC tool and curated 380+ trunk-contour masks; split train/val/test by tree so no tree appears in both training and test sets.",
       "Model: trained a YOLO26-seg trunk instance-segmentation model that extracts full trunks in dense, weedy and low-light field scenes; added SAM3 point-prompt pre-labeling to speed up annotation.",
       "Measurement: OpenCV stereo calibration, rectification and SGBM disparity; DBH computed from trunk contour plus depth using cylinder-tangent geometry; depth-quality gating, 0.8–1.5 m range gating and multi-frame median fusion; automatic target-tree selection when several trees are in view.",
       "Engineering: real-time GUI that fuses measurements of one tree from multiple angles; ArUco markers to confirm 1.3 m breast height; lossless recording with offline replay evaluation; 200+ tests. Also designed a custom global-shutter stereo camera (Raspberry Pi 5 + hardware-synced trigger) to address rolling shutter and low light in the field."
